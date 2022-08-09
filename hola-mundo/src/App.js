@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Greeting from './components/pure/greeting';
+import GreetingF from './components/pure/greetingF';
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {/*Componente propio Greeting.jsx */}
-        <Greeting name="Alejandra"></Greeting>
+        {/*<Greeting name="Alejandra"></Greeting>*/}
+        <GreetingF name="Alejandra"></GreetingF>
       </header>
     </div>
   );

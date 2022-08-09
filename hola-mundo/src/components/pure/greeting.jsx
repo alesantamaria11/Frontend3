@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-{/* Las props son información que le vamos a pasar por atributos */}
-{/* State es una información privada del componente que sirve para gestionarse, mostrar contenido, hacer una lógica, etc. Algo así como propiedades de la clase. */}
+// Las props son información que le vamos a pasar por atributos.
+// State es una información privada del componente que sirve para gestionarse, mostrar contenido, hacer una lógica, etc. Algo así como propiedades de la clase.
 
 class Greeting extends Component {
+
+    
     constructor(props){
         super(props);
         this.state = {
@@ -24,6 +26,11 @@ class Greeting extends Component {
                 <h2>
                     Tu edad es de { this.state.age } años
                 </h2>
+                <div>
+                    <button onClick={this.birthday}>
+                        Cumplir años
+                    </button>
+                </div>
             </div>
         );
     }
@@ -38,9 +45,12 @@ class Greeting extends Component {
 }
 
 
-Greeting.propTypes = {
-    name: PropTypes.string, 
-};
 
+}
+
+
+Greeting.propTypes = {
+    name: PropTypes.string,
+};
 
 export default Greeting;
