@@ -42,7 +42,7 @@ const Ejemplo2 = () => {
     //     console.log(miRef);
     // })
 
-     /**
+    /**
      * ? Caso 2: Ejecutar solo cuando cambie el contador1
      * Cada vez que haya un cambio en el contador1, se ejecuta lo que
      * diga el useEffect. En caso de que cambie el contador2 no habrá ejecución
@@ -54,7 +54,7 @@ const Ejemplo2 = () => {
     //     console.log(miRef);
     // }, [contador1]);
 
-      /**
+    /**
      * ? Caso 2: Ejecutar solo cuando cambie el contador1 o contador2
      * Cada vez que haya un cambio en el contador1, se ejecuta lo que
      * diga el useEffect.
@@ -62,7 +62,7 @@ const Ejemplo2 = () => {
      * diga el useEffect.
      */
 
-       useEffect(() => {
+        useEffect(() => {
         console.log('CAMBIO EN EL ESTATO DEL CONTADO 1 / CONTADOR 2');
         console.log('Mostrando referencia a elemento del DOM');
         console.log(miRef);

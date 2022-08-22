@@ -5,7 +5,8 @@ import './App.css';
 // import TaskListComponent from './components/containers/task_list';
 //import ContactoListComponent from './components/containers/contacto_list';
 //import Ejemplo1 from './hooks/Ejemplo1';
-import Ejemplo2 from './hooks/Ejemplo2';
+// import Ejemplo2 from './hooks/Ejemplo2';
+import MiComponenteConContexto from './hooks/Ejemplo3';
 
 function App() {
   return (
@@ -28,7 +29,9 @@ function App() {
         {/* Ejemplo 1 */}
         {/* <Ejemplo1></Ejemplo1> */}
         {/* Ejemplo 2 */}
-        <Ejemplo2></Ejemplo2>
+        {/* <Ejemplo2></Ejemplo2> */}
+        {/* Ejemplo 3 */}
+        <MiComponenteConContexto></MiComponenteConContexto>
       </header>
     </div>
   );
