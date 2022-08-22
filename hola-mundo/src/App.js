@@ -3,7 +3,9 @@ import './App.css';
 // import Greeting from './components/pure/greeting';
 // import GreetingF from './components/pure/greetingF';
 // import TaskListComponent from './components/containers/task_list';
-import ContactoListComponent from './components/containers/contacto_list';
+//import ContactoListComponent from './components/containers/contacto_list';
+//import Ejemplo1 from './hooks/Ejemplo1';
+import Ejemplo2 from './hooks/Ejemplo2';
 
 function App() {
   return (
@@ -20,7 +22,13 @@ function App() {
         {/* <TaskListComponent></TaskListComponent> */}
         
         {/* Componente de listado de contactos */}
-        <ContactoListComponent></ContactoListComponent>
+        {/* <ContactoListComponent></ContactoListComponent> */}
+
+        {/* Ejemplos de usos de HOOKS */}
+        {/* Ejemplo 1 */}
+        {/* <Ejemplo1></Ejemplo1> */}
+        {/* Ejemplo 2 */}
+        <Ejemplo2></Ejemplo2>
       </header>
     </div>
   );
