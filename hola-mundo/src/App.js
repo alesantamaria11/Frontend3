@@ -6,7 +6,8 @@ import './App.css';
 //import ContactoListComponent from './components/containers/contacto_list';
 //import Ejemplo1 from './hooks/Ejemplo1';
 // import Ejemplo2 from './hooks/Ejemplo2';
-import MiComponenteConContexto from './hooks/Ejemplo3';
+//import MiComponenteConContexto from './hooks/Ejemplo3';
+import Ejemplo4 from './hooks/Ejemplo4';
 
 function App() {
   return (
@@ -31,7 +32,14 @@ function App() {
         {/* Ejemplo 2 */}
         {/* <Ejemplo2></Ejemplo2> */}
         {/* Ejemplo 3 */}
-        <MiComponenteConContexto></MiComponenteConContexto>
+        {/* <MiComponenteConContexto></MiComponenteConContexto> */}
+        {/* Ejemplo 4 */}
+        <Ejemplo4 nombre="Alejandra">
+        {/* Todo lo que hay aquí es tratado como props.children */}
+          <h3>
+            Contenido del children
+          </h3>
+        </Ejemplo4>
       </header>
     </div>
   );
