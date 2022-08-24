@@ -9,7 +9,7 @@ import React, {useState, useContext} from 'react';
 /**
  * 
  * @returns Componente 1
- * Dispone de un contexto que va atener un valor que recibe desde el padre
+ * Dispone de un contexto que va a tener un valor que recibe desde el padre
  */
 
 //Inicializamos un estado vacío que va a rellenarse con los datos del

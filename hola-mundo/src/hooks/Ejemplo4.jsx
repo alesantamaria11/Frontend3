@@ -11,7 +11,7 @@ const Ejemplo4 = (props) => {
         <div>
             <h1>***Ejemplo de children props***</h1>
             <h2>
-                Nombre: { props.nombre}
+                Nombre: { props.nombre }
             </h2>
             {/* props.children va a renderizar por defecto aquello
             que se encuentre entre las etiquetas de apertura y cierre de este 
