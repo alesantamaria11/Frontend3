@@ -4,18 +4,18 @@ import { Task } from '../../models/task.class';
 import { LEVELS } from '../../models/levels.enum';
 import TaskComponent from '../pure/task';
 
-
-
 const TaskListComponent = () => {
 
     const defaultTask = new Task('Example', 'Default description', false, LEVELS.NORMAL);
 
     //Estado del componente
     const [tasks, setTasks] = useState([defaultTask]);
+    const [loading, setLoading] = useState(true);
 
     //Control del ciclo de vida del componente
     useEffect(() => {
         console.log('Task state has been modified');
+        setLoading(false);
         return () => {
             console.log('Task list component is going to unmount.');
         };
