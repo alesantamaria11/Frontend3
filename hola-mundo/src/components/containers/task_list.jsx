@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Task } from '../../models/task.class';
 import { LEVELS } from '../../models/levels.enum';
 import TaskComponent from '../pure/task';
+//Importamos la hoja de estilos task.scss
+import '../../styles/task.scss';
 
 const TaskListComponent = () => {
 
@@ -21,7 +23,7 @@ const TaskListComponent = () => {
         };
     }, [tasks]);
 
-    changeCompleted = (id) =>{
+    const changeCompleted = (id) =>{
         console.log('ToDo: Cambiar estado de una tarea');
     }
 
