@@ -28,22 +28,9 @@ const TaskComponent = ({ task }) => {
                 </td>
                 <td className='align-middle'>
                     {/* TODO: Sustituir por un iconos */}
-                    <span>{task.completed}</span>
+                    <span>{task.completed ? 'Completed' : 'Pending'}</span>
                 </td>
             </tr>
-
-            {/* <h2 className='task-name'>
-                Name: { task.name }
-            </h2>
-            <h3>
-                Description: { task.description }
-            </h3>
-            <h4>
-                Level: { task.level }
-            </h4>
-            <h5>
-                This task is: { task.completed ? 'COMPLETED':'PENDING' }
-            </h5> */}
         </div>
     );
 };
