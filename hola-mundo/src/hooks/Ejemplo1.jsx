@@ -2,7 +2,7 @@
  * Ejemplo de uso del hook useState
  * 
  * Crear un componente de tipo función y acceder a su estado privado a trvés de un hook
- * y adermás poder modificarlo.
+ * y además poder modificarlo.
  */
 
 import React, { useState } from 'react';

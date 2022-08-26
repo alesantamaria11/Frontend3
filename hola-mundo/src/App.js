@@ -2,13 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 // import Greeting from './components/pure/greeting';
 // import GreetingF from './components/pure/greetingF';
-import TaskListComponent from './components/containers/task_list';
-import GreetingStyled from './components/pure/greetingStyled';
-//import ContactoListComponent from './components/containers/contacto_list';
+// import TaskListComponent from './components/containers/task_list';
+// import GreetingStyled from './components/pure/greetingStyled';
+// import ContactoListComponent from './components/containers/contacto_list';
 //import Ejemplo1 from './hooks/Ejemplo1';
 // import Ejemplo2 from './hooks/Ejemplo2';
 //import MiComponenteConContexto from './hooks/Ejemplo3';
 // import Ejemplo4 from './hooks/Ejemplo4';
+import Clock from './hooks/lifeCycle/Clock';
 
 function App() {
   return (
@@ -45,7 +46,9 @@ function App() {
         {/* Ciclo de vida */}
 
         {/* Greetin Style */}
-        <GreetingStyled name='Alejandra'></GreetingStyled>
+        {/* <GreetingStyled name='Alejandra'></GreetingStyled> */}
+
+        {/* <Clock></Clock> */}
       </header>
     </div>
   );
