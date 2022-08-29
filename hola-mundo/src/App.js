@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
+import Father from './components/containers/father';
 // import Greeting from './components/pure/greeting';
 // import GreetingF from './components/pure/greetingF';
-import TaskListComponent from './components/containers/task_list';
+// import TaskListComponent from './components/containers/task_list';
 // import GreetingStyled from './components/pure/greetingStyled';
 // import ContactoListComponent from './components/containers/contacto_list';
 //import Ejemplo1 from './hooks/Ejemplo1';
@@ -24,7 +25,7 @@ function App() {
         {/* <GreetingF name="Alejandra"></GreetingF> */}
         
         {/* Componente de listado de tareas */}
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
         
         {/* Componente de listado de contactos */}
         {/* <ContactoListComponent></ContactoListComponent> */}
@@ -50,7 +51,10 @@ function App() {
         {/* <GreetingStyled name='Alejandra'></GreetingStyled> */}
 
         {/* <Clock></Clock> */}
-      {/* </header> */}
+        {/* </header> */}
+
+      {/* Gestor de eventos */}
+      <Father></Father>
     </div>
   );
 }
