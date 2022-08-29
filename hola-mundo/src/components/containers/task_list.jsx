@@ -8,7 +8,7 @@ import '../../styles/task.scss';
 
 const TaskListComponent = () => {
 
-    const defaultTask = new Task('Example', 'Default description', false, LEVELS.NORMAL);
+    const defaultTask = new Task('Example', 'Default description', true, LEVELS.NORMAL);
 
     //Estado del componente
     const [tasks, setTasks] = useState([defaultTask]);
