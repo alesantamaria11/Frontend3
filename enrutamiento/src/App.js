@@ -1,32 +1,27 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Expenses from "./routes/expenses";
+import Home from './routes/home';
+import Invoices from "./routes/invoices";
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <div className="container">
-        <h1>Navbar</h1>
-        <hr/>
-        <Switch>
-          <Route path='/contacto'>
-            Esta es la página de contacto
+    <div>
+      <h1>Bookkeeper</h1>
+      <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem",
+        }}
+      >
+        
+        <Routes>
+          <Route path="/" element={<Home/>}>
+            <Route path="expenses" element={<Expenses />} />
+            <Route path="invoices" element={<Invoices />} />
           </Route>
-          <Route path='/nosotros'>
-            Esta es la página de nosotros
-          </Route>
-          <Route path='/'>
-            Esta es la página de inicio
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-    
+        </Routes>
+      </nav>
+    </div>
   );
 }
-
-export default App;
