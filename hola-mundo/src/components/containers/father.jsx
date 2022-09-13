@@ -9,7 +9,7 @@ const Father = () => {
         alert(`Message received: ${text}`)
     }
 
-    function updateName(){
+    function updateName(newName){
         setName(newName)
     }
 

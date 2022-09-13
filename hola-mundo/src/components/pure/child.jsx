@@ -21,7 +21,9 @@ const Child = ({ name, send, update }) => {
 
     return (
         <div style={{background: 'cyan', padding: '30px'}}>
-            <p onMouseOver={() => console.log('On Mouse Over')}>Child Component</p>
+        
+            <p onMouseOver={() => console.log('On Mouse Over')}>
+            Hello, {name}</p>
 
             <button onClick={() => console.log('Pressed Button 1')}>Botón 1</button>
 
